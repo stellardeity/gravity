@@ -249,19 +249,6 @@ const populateManifestations = (masses) => {
 populateManifestations(innerSolarSystem.masses);
 
 /*
- * Click the reset button to reset the simulation
- */
-
-document.querySelector("#reset-button").addEventListener(
-  "click",
-  () => {
-    innerSolarSystem.masses = JSON.parse(JSON.stringify(masses));
-    populateManifestations(innerSolarSystem.masses);
-  },
-  false
-);
-
-/*
  * Code for adding masses with you mouse
  */
 
